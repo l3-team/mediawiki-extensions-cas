@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"cas-desc": "PluggableAuth ile birlikte Cas kullanarak kimlik doğrulaması sağlar",
+	"cas-wg-empty-displayname": "Localvaret.php üzerinde <var>wgCas_DisplayName</var> yapılandırma değişkeni boş",
+	"cas-wg-empty-email": "Localvaret.php üzerinde <var>wgCas_Email</var> yapılandırma değişkeni boş",
+	"cas-wg-empty-username": "Localvaret.php üzerinde <var>wgCas_Username</var> yapılandırma değişkeni boş",
+	"cas-wg-empty-groupmap-attr": "Localvaret.php üzerinde <var>wgCas_GroupMap</var> yapılandırma değişkeni boş",
+	"cas-attr-empty-username": "Cas: kullanıcı adı özelliği ayarlanmadı",
+	"cas-attr-empty-groupmap-attr": "Cas: GroupMap özelliği bulunamıyor"
+}

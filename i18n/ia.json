@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"cas-desc": "Forni authentication usante Cas in conjunction con PluggableAuth",
+	"cas-wg-empty-displayname": "Le variabile de configuration <var>wgCas_DisplayName</var> es vacue in LocalSettings.php",
+	"cas-wg-empty-email": "Le variabile de configuration <var>wgCas_Email</var> es vacue in LocalSettings.php",
+	"cas-wg-empty-username": "Le variabile de configuration <var>wgCas_Username</var> es vacue in LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "Le variabile de configuration <var>wgCas_GroupMap</var> es vacue in LocalSettings.php",
+	"cas-attr-empty-username": "Cas: le attributo del nomine de usator non es definite",
+	"cas-attr-empty-groupmap-attr": "Cas: impossibile trovar le attributo GroupMap"
+}

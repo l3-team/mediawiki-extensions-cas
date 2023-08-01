@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"cas-desc": "Овозможува заверка со Шиболет која работи заедно со PluggableAuth",
+	"cas-wg-empty-displayname": "Променливата во поставеноста на <var>wgCas_DisplayName</var> е празна во LocalSettings.php",
+	"cas-wg-empty-email": "Променливата во поставеноста на <var>wgCas_Email</var> е празна во LocalSettings.php",
+	"cas-wg-empty-username": "Променливата во поставеноста на <var>wgCas_Username</var> е празна во LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "Променливата во поставеноста на <var>wgCas_GroupMap</var> е празна во LocalSettings.php",
+	"cas-attr-empty-username": "Шиболет: атрибутот за корисничко име не е зададен",
+	"cas-attr-empty-groupmap-attr": "Шиболет: не можам да го најдам атрибутот GroupMap"
+}

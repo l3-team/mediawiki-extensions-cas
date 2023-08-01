@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"northway"
+		]
+	},
+	"cas-desc": "Cas azonosítás PluggableAuth-al",
+	"cas-wg-empty-displayname": "A wgCas_DisplayName paraméter üres a LocalSettings.php-ban",
+	"cas-wg-empty-email": "A wgCas_Email paraméter üres a LocalSettings.php-ban",
+	"cas-wg-empty-username": "A wgCas_Username paraméter üres a LocalSettings.php-ban",
+	"cas-wg-empty-groupmap-attr": "A wgCas_GroupMap hibás vagy nem található a LocalSettings.php-ban",
+	"cas-attr-empty-username": "Cas: felhasználónév attribútum nem található",
+	"cas-attr-empty-groupmap-attr": "Cas: a GroupMap-hez szükséges attribútum nem található vagy hibás"
+}

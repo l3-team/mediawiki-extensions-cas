@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"cas-desc": "Dèje l'autendicazione ausanne Cas 'nzieme a PluggableAuth",
+	"cas-wg-empty-displayname": "'A variabbele de configurazione <var>wgCas_DisplayName</var> jè vacande jndr'à LocalSettings.php",
+	"cas-wg-empty-email": "'A variabbele de configurazione <var>wgCas_Email</var> jè vacande jndr'à LocalSettings.php",
+	"cas-wg-empty-username": "'A variabbele de configurazione <var>wgCas_Username</var> jè vacande jndr'à LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "'A variabbele de configurazione <var>wgCas_GroupMap</var> jè vacande jndr'à LocalSettings.php",
+	"cas-attr-empty-username": "Cas: l'attribbute nome utende non g'è 'mbostate",
+	"cas-attr-empty-groupmap-attr": "Cas: 'mbossibbele acchià l'attribbute GroupMap"
+}

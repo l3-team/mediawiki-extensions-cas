@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"cas-desc": "Zagotavlja avtentikacijo s SimpleSAMLphp v kombinaciji s PluggableAuth",
+	"cas-wg-empty-displayname": "Konfiguracijska spremenljivka <var>wgCas_DisplayName</var> je v LocalSettings.php prazna",
+	"cas-wg-empty-email": "Konfiguracijska spremenljivka <var>wgCas_Email</var> je v LocalSettings.php prazna",
+	"cas-wg-empty-username": "Konfiguracijska spremenljivka <var>wgCas_Username</var> je v LocalSettings.php prazna",
+	"cas-wg-empty-groupmap-attr": "Konfiguracijska spremenljivka <var>wgCas_DisplayName</var> je v LocalSettings.php prazna",
+	"cas-attr-empty-username": "Cas: atribut uporabniškega imena ni nastavljen",
+	"cas-attr-empty-groupmap-attr": "Cas: atributa GroupMap ni mogoče najti"
+}

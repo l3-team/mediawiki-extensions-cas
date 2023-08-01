@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hetru"
+		]
+	},
+	"cas-desc": "Provides authentication using Cas in conjunction with PluggableAuth",
+	"cas-wg-empty-displayname": "The <var>wgCas_DisplayName</var> configuration variable is empty in LocalSettings.php",
+	"cas-wg-empty-email": "The <var>wgCas_Email</var> configuration variable is empty in LocalSettings.php",
+	"cas-wg-empty-username": "The <var>wgCas_Username</var> configuration variable is empty in LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "The <var>wgCas_GroupMap</var> configuration variable is empty in LocalSettings.php",
+	"cas-attr-empty-username": "Cas: username attribute is not set",
+	"cas-attr-empty-groupmap-attr": "Cas: cannot find GroupMap attribute"
+}

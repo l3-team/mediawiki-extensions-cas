@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Geraki"
+		]
+	},
+	"cas-desc": "Παρέχει έλεγχο ταυτότητας χρησιμοποιώντας το Cas σε συνδυασμό με το PluggableAuth"
+}

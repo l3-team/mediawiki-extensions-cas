@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"cas-wg-empty-email": "La variabile di configurazione <var>wgCas_Email</var> è vuota in LocalSettings.php",
+	"cas-wg-empty-username": "La variabile di configurazione <var>wgCas_Username</var> è vuota in LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "La variabile di configurazione <var>wgCas_GroupMap</var> è vuota in LocalSettings.php"
+}

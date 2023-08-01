@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"cas-desc": "Fornece capacidades de autenticação usando Cas em conjunto com o PluggableAuth",
+	"cas-wg-empty-displayname": "A variável de configuração <var>wgCas_DisplayName</var> está vazia no ficheiro LocalSettings.php",
+	"cas-wg-empty-email": "A variável de configuração <var>wgCas_Email</var> está vazia no ficheiro LocalSettings.php",
+	"cas-wg-empty-username": "A variável de configuração <var>wgCas_Username</var> está vazia no ficheiro LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "A variável de configuração <var>wgCas_GroupMap</var> está vazia no ficheiro LocalSettings.php",
+	"cas-attr-empty-username": "Cas: o atributo do nome de utilizador não está definido",
+	"cas-attr-empty-groupmap-attr": "Cas: não foi encontrado o atributo GroupMap"
+}

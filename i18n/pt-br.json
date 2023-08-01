@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr03ramos",
+			"Eduardo Addad de Oliveira",
+			"Eduardoaddad"
+		]
+	},
+	"cas-desc": "Fornece autenticação usando Cas em conjunto com PluggableAuth",
+	"cas-wg-empty-displayname": "A variável de configuração <var>wgCas_DisplayName</var> está vazia em LocalSettings.php",
+	"cas-wg-empty-email": "A configuração da variável <var>wgCas_Email</var> está vazia em LocalSettings.php",
+	"cas-wg-empty-username": "A configuração da variável <var>wgCas_Username</var> está vazia em LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "A configuração da variável <var>wgCas_GroupMap</var> está vazia em LocalSettings.php",
+	"cas-attr-empty-username": "Cas: atributo de nome de usuário não está definido",
+	"cas-attr-empty-groupmap-attr": "Cas: não é possível encontrar o atributo GroupMap"
+}

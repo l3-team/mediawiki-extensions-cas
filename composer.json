@@ -1,0 +1,51 @@
+{
+	"name": "mediawiki/cas",
+        "extra": {
+                "installer-name": "CAS"
+        },
+        "license": "GPL-2.0+",
+        "type": "mediawiki-extension",
+        "homepage": "https://www.mediawiki.org/wiki/Extension:CAS",
+        "description": "Allows authentication against a CAS resource",
+        "keywords": [
+                "extension",
+                "wiki",
+                "mediawiki",
+                "cas"
+        ],
+        "authors": [
+                {
+                        "name": "Mathieu Hetru",
+                        "email": "mathieu.hetru@laposte.net",
+                        "role": "Contributor"
+                }
+        ],
+	"require": {
+		"apereo/phpcas": "1.6.1",
+		"composer/installers": "~1.0|~2"
+	},
+	"require-dev": {
+		"mediawiki/mediawiki-codesniffer": "41.0.0",
+		"mediawiki/minus-x": "1.1.1",
+		"php-parallel-lint/php-console-highlighter": "1.0.0",
+		"php-parallel-lint/php-parallel-lint": "1.3.2",
+                "apereo/phpcas": "1.6.1"
+	},
+	"scripts": {
+		"test": [
+                        "parallel-lint . --exclude vendor --exclude node_modules",
+                        "minus-x check .",
+                        "@phpcs"
+                ],
+                "fix": [
+                        "minus-x fix .",
+                        "phpcbf"
+                ],
+                "phpcs": "phpcs -sp"
+	},
+	"config": {
+                "allow-plugins": {
+                        "composer/installers": true
+                }
+        }
+}

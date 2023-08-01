@@ -1,0 +1,96 @@
+{
+	"name": "Cas",
+	"version": "1.0",
+	"author": [
+		"mathieu.hetru@univ-lille.fr"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:Cas",
+	"descriptionmsg": "cas-desc",
+	"license-name": "GPL-2.0",
+	"type": "other",
+        "AutoloadNamespaces": {
+                "MediaWiki\\Extension\\Cas\\": "src/"
+        },
+        "TestAutoloadNamespaces": {
+                "MediaWiki\\Extension\\Cas\\Tests\\": "tests/phpunit/"
+        },
+	"requires": {
+		"MediaWiki": ">= 1.34.0",
+		"extensions": {
+			"PluggableAuth": "*"
+		}
+	},
+	"MessagesDirs": {
+		"Cas": [
+			"i18n"
+		]
+	},
+	"config": {
+		"wgCas_Server": {
+                        "value": "cas.host.com",
+                        "path": "cas.host.com",
+                        "description":"Host server CAS",
+                        "public": true
+                },
+		"wgCas_Port": {
+                        "value": "443",
+                        "path": "443",
+                        "description":"Port server CAS",
+                        "public": true
+                },
+		"wgCas_Path": {
+                        "value": "",
+                        "path": "",
+                        "description":"Path server CAS",
+                        "public": true
+                },
+		"wgCas_ServiceUrl": {
+                        "value": "http://127.0.0.1",
+                        "path": "http://127.0.0.1",
+                        "description":"Url of the service",
+                        "public": true
+                },
+		"wgCas_CACert": {
+                        "value": false,
+                        "path": false,
+                        "description":"Certificate",
+                        "public": true
+                },
+		"wgCas_LogoutRequest": {
+                        "value": true,
+                        "path": true,
+                        "description":"Logout request",
+                        "public": true
+                },
+		"wgCas_DisplayName": {
+			"value": "displayName",
+			"path": "displayName",
+			"description":"displayName",
+			"public": true
+		},
+		"wgCas_Email": {
+			"value": "mail",
+                        "path": "mail",
+                        "description":"mail",
+                        "public": true
+		},
+		"wgCas_GroupMap": {
+			"value": "array",
+                        "path": "array",
+                        "description":"array",
+                        "public": true
+		}
+	},
+        "attributes": {
+ 		"PluggableAuth": {
+      			"Cas": {
+         			"class": "MediaWiki\\Extension\\Cas\\Cas",
+         			"services": [
+            				"AuthManager"
+         			]
+      			}
+   		}
+	},
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

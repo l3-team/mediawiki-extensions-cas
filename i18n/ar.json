@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Meno25"
+		]
+	},
+	"cas-desc": "يوفر المصادقة باستخدام Cas جنبًا إلى جنب مع PluggableAuth",
+	"cas-wg-empty-displayname": "متغير التكوين <var>wgCas_DisplayName</var> فارغ في LocalSettings.php",
+	"cas-wg-empty-email": "متغير التكوين <var>wgCas_Email</var> فارغ في LocalSettings.php",
+	"cas-wg-empty-username": "متغير التكوين <var>wgCas_Username</var> فارغ في LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "متغير التكوين <var>wgCas_GroupMap</var> فارغ في LocalSettings.php",
+	"cas-attr-empty-username": "Cas: لم يتم تعيين سمة اسم المستخدم",
+	"cas-attr-empty-groupmap-attr": "Cas: لا يمكن العثور على سمة GroupMap"
+}

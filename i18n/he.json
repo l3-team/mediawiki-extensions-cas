@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80"
+		]
+	},
+	"cas-desc": "אספקת אימות באמצעות Cas בשילוב עם PluggableAuth",
+	"cas-wg-empty-displayname": "משתנה התצורה <var>wgCas_DisplayName</var> ריק ב־LocalSettings.php",
+	"cas-wg-empty-email": "משתנה התצורה <var>wgCas_Email</var> ריק ב־LocalSettings.php",
+	"cas-wg-empty-username": "משתנה התצורה <var>wgCas_Username</var> ריק ב־LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "משתנה התצורה <var>wgCas_GroupMap</var> ריק ב־LocalSettings.php",
+	"cas-attr-empty-username": "שיבולת: מאפיין שם המשתמש אינו מוגדר",
+	"cas-attr-empty-groupmap-attr": "שיבולת: לא ניתן למצוא את המאפיין GroupMap"
+}

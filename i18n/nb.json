@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Jon Harald Søby"
+		]
+	},
+	"cas-desc": "Tilbyr autentisering med Cas i forbindelse med PluggableAuth",
+	"cas-wg-empty-displayname": "Konfigurasjonsvariabelen <var>wgCas_DisplayName</var> er tom i LocalSettings.php",
+	"cas-wg-empty-email": "Konfigurasjonsvariabelen <var>wgCas_Email</var> er tom i LocalSettings.php",
+	"cas-wg-empty-username": "Konfigurasjonsvariabelen <var>wgCas_Username</var> er tom i LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "Konfigurasjonsvariabelen <var>wgCas_GroupMap</var> er tom i LocalSettings.php",
+	"cas-attr-empty-username": "Cas: brukernavnsattributt ikke satt",
+	"cas-attr-empty-groupmap-attr": "Cas: kan ikke finne GroupMap-attributt"
+}

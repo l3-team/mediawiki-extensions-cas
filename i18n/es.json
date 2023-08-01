@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"cas-desc": "Brinda autenticación por medio de Cas y PluggableAuth",
+	"cas-wg-empty-displayname": "La variable de configuración <var>wgCas_DisplayName</var> del archivo LocalSettings.php está vacía",
+	"cas-wg-empty-email": "La variable de configuración <var>wgCas_Email</var> del archivo LocalSettings.php está vacía",
+	"cas-wg-empty-username": "La variable de configuración <var>wgCas_Username</var> del archivo LocalSettings.php está vacía",
+	"cas-wg-empty-groupmap-attr": "La variable de configuración <var>wgCas_GroupMap</var> del archivo LocalSettings.php está vacía",
+	"cas-attr-empty-username": "Cas: no se ha definido el atributo de nombre de usuario",
+	"cas-attr-empty-groupmap-attr": "Cas: no se puede encontrar el atributo GroupMap"
+}

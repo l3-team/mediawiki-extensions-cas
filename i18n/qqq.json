@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"cas-desc": "{{desc|name=Cas|url=https://www.mediawiki.org/wiki/Extension:Cas}}",
+	"cas-wg-empty-displayname": "Used as error message",
+	"cas-wg-empty-email": "Used as error message",
+	"cas-wg-empty-username": "Used as error message",
+	"cas-wg-empty-groupmap-attr": "Used as error message",
+	"cas-attr-empty-username": "Used as error message",
+	"cas-attr-empty-groupmap-attr": "Used as error message"
+}

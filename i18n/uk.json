@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Piramidion"
+		]
+	},
+	"cas-desc": "Надає автентифікацію за допомогою Cas у поєднанні з PluggableAuth",
+	"cas-wg-empty-displayname": "Змінна конфігурації <var>wgCas_DisplayName</var> порожня в LocalSettings.php",
+	"cas-wg-empty-email": "Змінна конфігурації <var>wgCas_Email</var> порожня в LocalSettings.php",
+	"cas-wg-empty-username": "Змінна конфігурації <var>wgCas_Username</var> порожня в LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "Змінна конфігурації <var>wgCas_GroupMap</var> порожня в LocalSettings.php",
+	"cas-attr-empty-username": "Cas: не встановлено атрибут імені користувача",
+	"cas-attr-empty-groupmap-attr": "Cas: не вдалося знайти атрибут GroupMap"
+}

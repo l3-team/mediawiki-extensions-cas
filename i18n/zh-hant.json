@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"cas-desc": "提供使用 Cas 與 PluggableAuth 結合的驗證",
+	"cas-wg-empty-displayname": "在 LocalSettings.php 裡的 <var>wgCas_DisplayName</var> 設置變數為空",
+	"cas-wg-empty-email": "在 LocalSettings.php 裡的 <var>wgCas_Email</var> 設置變數為空",
+	"cas-wg-empty-username": "在 LocalSettings.php 裡的 <var>wgCas_Username</var> 設置變數為空",
+	"cas-wg-empty-groupmap-attr": "在 LocalSettings.php 裡的 <var>wgCas_GroupMap</var> 設置變數為空",
+	"cas-attr-empty-username": "Cas：使用者名稱屬性未設定",
+	"cas-attr-empty-groupmap-attr": "Cas：找不到 GroupMap 屬性"
+}
