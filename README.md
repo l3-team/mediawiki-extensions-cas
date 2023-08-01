@@ -11,7 +11,7 @@ Recommended MediaWiki version: **1.40+**
 
 ## Installation
 
-> This extension requires the [PluggableAuth](https://www.mediawiki.org/wiki/Extension:PluggableAuth) extension and [phpCAS](https://github.com/apereo/phpCAS) to be installed first.
+> This extension requires the [PluggableAuth](https://www.mediawiki.org/wiki/Extension:PluggableAuth) extension to be installed first.
 
 * Download and place the file(s) in a directory called Cas in your extensions/ folder.
 * Launch this command in the directory to install composer packages (dependencies of Cas package like apereo/phpcas) from composer.json and composer.lock :
