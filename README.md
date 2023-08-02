@@ -32,11 +32,11 @@ $wgCas_Port=443;
 $wgCas_Path="/cas";
 $wgCas_ServiceUrl="https://mediawikis.host.com";
 $wgCas_CACert=false;
-$wgCas_CA=null;
+$wgCas_CA=false;
 $wgCas_LogoutRequest=true;
 $wgCas_DisplayName="displayName";
 $wgCas_Email="mail";
-$wgCas_GroupMap=null;
+$wgCas_GroupMap=false;
 //$wgCas_GroupMap=array('attr_name' => 'memberOf','sysop' => 'cn=code_groupe_sysop,ou=groups,dc=univ,dc=fr','interface-admin' => 'cn=code_groupe_interface_admin,ou=groups,dc=univ,dc=fr','bureaucrat' => 'cn=code_groupe_bureaucrat,ou=groups,dc=univ,dc=fr');
 
 $wgPluggableAuth_ButtonLabel = 'Se connecter avec CAS';
@@ -64,7 +64,7 @@ $wgCas_Port | 443 | The port of the Cas server.
 $wgCas_Path | "" | The path of the Cas server.
 $wgCas_ServiceUrl | http://127.0.0.1 | The service url.
 $wgCas_CACert | false | The bool if cert
-$wgCas_CA | null | The cert
+$wgCas_CA | false | The cert
 $wgCas_Username | no default value | The main attribute returned by Cas server.
 $wgCas_Email | no default value | The name of the attribute to be used for the user's email address.
 $wgCas_DisplayName | no default value | The name of the attribute(s) to be used for the user's real name.
@@ -73,7 +73,7 @@ In addition, the following optional configuration variable is provided:
 
 Flag | Default | Description
 ---- | ------- | -----------
-$wgCas_GroupMap | null | Mapping  attributes to MediaWiki groups of the form: `$wgCas_GroupMap = array('attr_name' => 'memberOf','sysop' => 'cn=code_group,ou=groups,dc=univ,dc=fr','interface-admin'=>'cn=code_groupe,ou=groups,dc=univ,dc=fr','bureaucrat' => 'cn=code_groupe,ou=groups,dc=univ,dc=fr', '...');` No group mapping is performed if $wgCas_GroupMap is null.
+$wgCas_GroupMap | false | Mapping  attributes to MediaWiki groups of the form: `$wgCas_GroupMap = array('attr_name' => 'memberOf','sysop' => 'cn=code_group,ou=groups,dc=univ,dc=fr','interface-admin'=>'cn=code_groupe,ou=groups,dc=univ,dc=fr','bureaucrat' => 'cn=code_groupe,ou=groups,dc=univ,dc=fr', '...');` No group mapping is performed if $wgCas_GroupMap is false.
 
 - group sysop is the group of wiki admins
 - group interface-admin is the of wiki interface admins

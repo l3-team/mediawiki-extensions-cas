@@ -135,7 +135,7 @@ class Cas extends PluggableAuth {
             throw new Exception(wfMessage('cas-wg-empty-groupmap')->plain());
         }
 	
-        if ( (isset($GLOBALS['wgCas_GroupMap'])) && ($GLOBALS['wgCas_GroupMap'] != null) ) {
+        if ( (isset($GLOBALS['wgCas_GroupMap'])) && ($GLOBALS['wgCas_GroupMap'] != false) ) {
 	    $user = $this->services->getUserFactory()->newFromName( $username );
 	    $this->populateGroups($user, $attributes);
         }

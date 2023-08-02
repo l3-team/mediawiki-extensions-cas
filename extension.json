@@ -56,6 +56,12 @@
                         "description":"Certificate",
                         "public": true
                 },
+		"wgCas_CA": {
+                        "value": "null",
+                        "path": "null",
+                        "description":"Certificate",
+                        "public": true
+                },
 		"wgCas_LogoutRequest": {
                         "value": true,
                         "path": true,
@@ -75,8 +81,8 @@
                         "public": true
 		},
 		"wgCas_GroupMap": {
-			"value": "array",
-                        "path": "array",
+			"value": "false",
+                        "path": "false",
                         "description":"array",
                         "public": true
 		}
