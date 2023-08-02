@@ -9,7 +9,7 @@
 	"cas-wg-empty-port": "La variable de configuration <var>wgCas_Port</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-path": "La variable de configuration <var>wgCas_Path</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-service-url": "La variable de configuration <var>wgCas_ServiceUrl</var> est vide dans LocalSettings.php",
-	"cas-wg-empty-ca-cert": "La variable de configuration <var>wgCas_CaCert</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-ca-cert": "La variable de configuration <var>wgCas_CACert</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-ca": "La variable de configuration <var>wgCas_CA</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-logout-request": "La variable de configuration <var>wgCas_LogoutRequest</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-displayname": "La variable de configuration <var>wgCas_DisplayName</var> est vide dans LocalSettings.php",

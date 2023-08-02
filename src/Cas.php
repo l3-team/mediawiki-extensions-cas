@@ -64,7 +64,7 @@ class Cas extends PluggableAuth {
         }
 
 	// cacert
-        if (empty($GLOBALS['wgCas_CACert'])) {
+        if (!isset($GLOBALS['wgCas_CACert'])) {
             throw new Exception(wfMessage('cas-wg-empty-ca-cert')->plain());
 	}
 
