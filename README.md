@@ -2,11 +2,11 @@
 
 The **CAS** extension extends the [PluggableAuth](https://www.mediawiki.org/wiki/Extension:PluggableAuth) extension to provide authentication using [Apereo CAS phpCAS](https://github.com/apereo/phpCAS).
 
-Recommended MediaWiki version: **1.40+**
+Recommended MediaWiki version: **1.35+**
 
 ## Required
 
-- Mediawiki 1.4.0 or possibly earlier
+- Mediawiki 1.3.5 or possibly earlier
 - PluggableAuth 7.0.0 or possibly earlier
 
 ## Installation
@@ -32,6 +32,7 @@ $wgCas_Port=443;
 $wgCas_Path="/cas";
 $wgCas_ServiceUrl="https://mediawikis.host.com";
 $wgCas_CACert=false;
+$wgCas_CA=null;
 $wgCas_LogoutRequest=true;
 $wgCas_DisplayName="displayName";
 $wgCas_Email="mail";
@@ -44,7 +45,7 @@ $wgPluggableAuth_Config['Se connecter avec CAS'] = [
   'data' => []
 ];
 
-# mediawiki 1.4.0
+# mediawiki 1.3.5
 wfLoadExtension( 'PluggableAuth' ); # version 7.0.0
 wfLoadExtension( 'Cas' ); # plugin Cas
 ```
@@ -62,6 +63,8 @@ $wgCas_Server | cas.host.com | The host of the Cas server.
 $wgCas_Port | 443 | The port of the Cas server.
 $wgCas_Path | "" | The path of the Cas server.
 $wgCas_ServiceUrl | http://127.0.0.1 | The service url.
+$wgCas_CACert | false | The bool if cert
+$wgCas_CA | null | The cert
 $wgCas_Username | no default value | The main attribute returned by Cas server.
 $wgCas_Email | no default value | The name of the attribute to be used for the user's email address.
 $wgCas_DisplayName | no default value | The name of the attribute(s) to be used for the user's real name.
@@ -71,6 +74,10 @@ In addition, the following optional configuration variable is provided:
 Flag | Default | Description
 ---- | ------- | -----------
 $wgCas_GroupMap | null | Mapping  attributes to MediaWiki groups of the form: `$wgCas_GroupMap = array('attr_name' => 'memberOf','sysop' => 'cn=code_group,ou=groups,dc=univ,dc=fr','interface-admin'=>'cn=code_groupe,ou=groups,dc=univ,dc=fr','bureaucrat' => 'cn=code_groupe,ou=groups,dc=univ,dc=fr', '...');` No group mapping is performed if $wgCas_GroupMap is null.
+
+- group sysop is the group of wiki admins
+- group interface-admin is the of wiki interface admins
+- group bureaucrat is the group of wiki privileged users
 
 ### Group mapping
 

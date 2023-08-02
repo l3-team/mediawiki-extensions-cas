@@ -3,10 +3,16 @@
 		"authors": []
 	},
 	"cas-desc": "{{desc|name=Cas|url=https://www.mediawiki.org/wiki/Extension:Cas}}",
+	"cas-wg-empty-server": "Used as error message",
+	"cas-wg-empty-port": "Used as error message",
+	"cas-wg-empty-path": "Used as error message",
+	"cas-wg-empty-service-url": "Used as error message",
+	"cas-wg-empty-ca-cert": "Used as error message",
+	"cas-wg-empty-ca": "Used as error message",
+	"cas-wg-empty-logout-request": "Used as error message",
 	"cas-wg-empty-displayname": "Used as error message",
 	"cas-wg-empty-email": "Used as error message",
-	"cas-wg-empty-username": "Used as error message",
+	"cas-wg-empty-groupmap": "Used as error message",
 	"cas-wg-empty-groupmap-attr": "Used as error message",
-	"cas-attr-empty-username": "Used as error message",
 	"cas-attr-empty-groupmap-attr": "Used as error message"
 }

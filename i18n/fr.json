@@ -5,10 +5,16 @@
 		]
 	},
 	"cas-desc": "Fournit une authentification utilisant Cas conjointement avec PluggableAuth",
+	"cas-wg-empty-server": "La variable de configuration <var>wgCas_Server</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-port": "La variable de configuration <var>wgCas_Port</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-path": "La variable de configuration <var>wgCas_Path</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-service-url": "La variable de configuration <var>wgCas_ServiceUrl</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-ca-cert": "La variable de configuration <var>wgCas_CaCert</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-ca": "La variable de configuration <var>wgCas_CA</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-logout-request": "La variable de configuration <var>wgCas_LogoutRequest</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-displayname": "La variable de configuration <var>wgCas_DisplayName</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-email": "La variable de configuration <var>wgCas_Email</var> est vide dans LocalSettings.php",
-	"cas-wg-empty-username": "La variable de configuration <var>wgCas_Username</var> est vide dans LocalSettings.php",
-	"cas-wg-empty-groupmap-attr": "La variable de configuration <var>wgCAA_GroupMap</var> est vide dans LocalSettings.php",
-	"cas-attr-empty-username": "Cas : l’attribut du nom d'utilisateur n’est pas défini",
+	"cas-wg-empty-groupmap": "La variable de configuration <var>wgCas_GroupMap</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-groupmap-attr": "La variable de configuration <var>wgCAS_GroupMap</var> est vide dans LocalSettings.php",
 	"cas-attr-empty-groupmap-attr": "Cas : impossible de trouver l’attribut GroupMap"
 }

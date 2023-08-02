@@ -43,6 +43,41 @@ class Cas extends PluggableAuth {
 	\phpCAS::setLogger();
 	\phpCAS::setVerbose(false);
 
+	// server
+        if (empty($GLOBALS['wgCas_Server'])) {
+            throw new Exception(wfMessage('cas-wg-empty-server')->plain());
+	}
+
+	// port
+	if (empty($GLOBALS['wgCas_Port'])) {
+            throw new Exception(wfMessage('cas-wg-empty-port')->plain());
+        }
+
+	// path
+	if (empty($GLOBALS['wgCas_Path'])) {
+            throw new Exception(wfMessage('cas-wg-empty-path')->plain());
+        }
+
+	// service url
+	if (empty($GLOBALS['wgCas_ServiceUrl'])) {
+            throw new Exception(wfMessage('cas-wg-empty-service-url')->plain());
+        }
+
+	// cacert
+        if (empty($GLOBALS['wgCas_CACert'])) {
+            throw new Exception(wfMessage('cas-wg-empty-ca-cert')->plain());
+	}
+
+	// ca
+        if (empty($GLOBALS['wgCas_CA'])) {
+            throw new Exception(wfMessage('cas-wg-empty-ca')->plain());
+        }
+
+	// logoutrequest
+	if (empty($GLOBALS['wgCas_LogoutRequest'])) {
+            throw new Exception(wfMessage('cas-wg-empty-logout-request')->plain());
+        }
+
 	// call
         \phpCAS::client(CAS_VERSION_2_0, $GLOBALS['wgCas_Server'], $GLOBALS['wgCas_Port'], is_null($GLOBALS['wgCas_Path']) ? '' : $GLOBALS['wgCas_Path'], $GLOBALS['wgCas_ServiceUrl'], false);
 
@@ -62,12 +97,13 @@ class Cas extends PluggableAuth {
 
         //$id = null;
 	$attributes = \phpCAS::getAttributes();
-//echo "attributes<br />\n";
-//var_dump($attributes);
+	//echo "attributes<br />\n";
+	//var_dump($attributes);
+	
 	//username
 	$username = \phpCAS::getUser();
-//echo "username<br />\n";
-//var_dump($username);
+	//echo "username<br />\n";
+	//var_dump($username);
 
 	// displayname
 	if (empty($GLOBALS['wgCas_DisplayName'])) {
@@ -82,18 +118,23 @@ class Cas extends PluggableAuth {
         } else {
             $email = $attributes[$GLOBALS['wgCas_Email']];
         }
-//echo "mail<br />\n";
-//var_dump($mail);
+	//echo "mail<br />\n";
+	//var_dump($mail);
 
 	$username = (!is_numeric($username) ? strtolower($username) : $username);
-//echo "username<br />\n";
-//var_dump($username);
+	//echo "username<br />\n";
+	//var_dump($username);
         
-//echo "user<br />\n";
-//var_dump($user);
+	//echo "user<br />\n";
+	//var_dump($user);
 
-//echo "id<br />\n";
-//var_dump($id);
+	//echo "id<br />\n";
+	//var_dump($id);
+	
+	if (empty($GLOBALS['wgCas_GroupMap'])) {
+            throw new Exception(wfMessage('cas-wg-empty-groupmap')->plain());
+        }
+	
         if ( (isset($GLOBALS['wgCas_GroupMap'])) && ($GLOBALS['wgCas_GroupMap'] != null) ) {
 	    $user = $this->services->getUserFactory()->newFromName( $username );
 	    $this->populateGroups($user, $attributes);
