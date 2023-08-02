@@ -69,12 +69,12 @@ class Cas extends PluggableAuth {
 	}
 
 	// ca
-        if (empty($GLOBALS['wgCas_CA'])) {
+        if (!isset($GLOBALS['wgCas_CA'])) {
             throw new Exception(wfMessage('cas-wg-empty-ca')->plain());
         }
 
 	// logoutrequest
-	if (empty($GLOBALS['wgCas_LogoutRequest'])) {
+	if (!isset($GLOBALS['wgCas_LogoutRequest'])) {
             throw new Exception(wfMessage('cas-wg-empty-logout-request')->plain());
         }
 
