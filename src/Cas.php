@@ -54,7 +54,7 @@ class Cas extends PluggableAuth {
         }
 
 	// path
-	if (empty($GLOBALS['wgCas_Path'])) {
+	if (!isset($GLOBALS['wgCas_Path'])) {
             throw new Exception(wfMessage('cas-wg-empty-path')->plain());
         }
 
