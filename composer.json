@@ -5,7 +5,7 @@
         },
         "license": "GPL-2.0+",
         "type": "mediawiki-extension",
-        "homepage": "https://www.mediawiki.org/wiki/Extension:CAS",
+        "homepage": "https://www.mediawiki.org/wiki/Extension:Cas",
         "description": "Allows authentication against a CAS resource",
         "keywords": [
                 "extension",
