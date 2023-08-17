@@ -105,19 +105,33 @@ class Cas extends PluggableAuth {
 	//echo "username<br />\n";
 	//var_dump($username);
 
-	// displayname
-	if (empty($GLOBALS['wgCas_DisplayName'])) {
+    $casExcludeAttributes = $GLOBALS['wgCas_ExcludeAttributes'] ?: false;
+    if ($casExcludeAttributes != false) {
+        // displayname
+        $realname = $username;
+
+        //email
+        if (empty($GLOBALS['wgCas_EmailDomain'])) {
+            throw new Exception(wfMessage('cas-wg-empty-email-domain')->plain());
+        } else {
+            $email = $username . "@" . $GLOBALS['wgCas_EmailDomain'];
+        }
+
+    } else {
+        // displayname
+        if (empty($GLOBALS['wgCas_DisplayName'])) {
             throw new Exception(wfMessage('cas-wg-empty-displayname')->plain());
         } else {
             $realname = $attributes[$GLOBALS['wgCas_DisplayName']];
-        }	
+        }
 
-	//email
+        //email
         if (empty($GLOBALS['wgCas_Email'])) {
             throw new Exception(wfMessage('cas-wg-empty-email')->plain());
         } else {
             $email = $attributes[$GLOBALS['wgCas_Email']];
         }
+    }
 	//echo "mail<br />\n";
 	//var_dump($mail);
 
@@ -131,13 +145,11 @@ class Cas extends PluggableAuth {
 	//echo "id<br />\n";
 	//var_dump($id);
 	
-	if (empty($GLOBALS['wgCas_GroupMap'])) {
-            throw new Exception(wfMessage('cas-wg-empty-groupmap')->plain());
-        }
-	
-        if ( (isset($GLOBALS['wgCas_GroupMap'])) && ($GLOBALS['wgCas_GroupMap'] != false) ) {
-	    $user = $this->services->getUserFactory()->newFromName( $username );
-	    $this->populateGroups($user, $attributes);
+        $casGroupMap = $GLOBALS['wgCas_GroupMap'] ?: false;
+
+        if ($casGroupMap != false) {
+            $user = $this->services->getUserFactory()->newFromName( $username );
+            $this->populateGroups($user, $attributes);
         }
 
 
