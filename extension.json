@@ -68,6 +68,18 @@
                         "description":"Logout request",
                         "public": true
                 },
+		"wgCas_ExcludeAttributes": {
+			"value": false,
+			"path": false,
+			"description":"Ignores CAS Attributes and generates the Display Name and Email from the username",
+			"public": true
+		},
+		"wgCas_EmailDomain": {
+			"value": "domain.com",
+			"path": "domain.com",
+			"description":"Concatenated with username to generate email address",
+			"public": true
+		},
 		"wgCas_DisplayName": {
 			"value": "displayName",
 			"path": "displayName",
