@@ -12,6 +12,7 @@
 	"cas-wg-empty-logout-request": "Used as error message",
 	"cas-wg-empty-displayname": "Used as error message",
 	"cas-wg-empty-email": "Used as error message",
+	"cas-wg-empty-email-domain" :"Used as error message",
 	"cas-wg-empty-groupmap": "Used as error message",
 	"cas-wg-empty-groupmap-attr": "Used as error message",
 	"cas-attr-empty-groupmap-attr": "Used as error message"
