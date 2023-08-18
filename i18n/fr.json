@@ -14,6 +14,7 @@
 	"cas-wg-empty-logout-request": "La variable de configuration <var>wgCas_LogoutRequest</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-displayname": "La variable de configuration <var>wgCas_DisplayName</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-email": "La variable de configuration <var>wgCas_Email</var> est vide dans LocalSettings.php",
+	"cas-wg-empty-email-domain" :"La variable de configuration <var>wgCas_EmailDomain</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-groupmap": "La variable de configuration <var>wgCas_GroupMap</var> est vide dans LocalSettings.php",
 	"cas-wg-empty-groupmap-attr": "La variable de configuration <var>wgCAS_GroupMap</var> est vide dans LocalSettings.php",
 	"cas-attr-empty-groupmap-attr": "Cas : impossible de trouver l’attribut GroupMap"
