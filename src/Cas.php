@@ -149,6 +149,10 @@ class Cas extends PluggableAuth {
 
         if ($casGroupMap != false) {
             $user = $this->services->getUserFactory()->newFromName( $username );
+//var_dump($user);
+            if ( !$user->isRegistered() ) { $user->addToDatabase(); }
+            $user = $this->services->getUserFactory()->newFromName( $username );
+//var_dump($user);
             $this->populateGroups($user, $attributes);
         }
 
